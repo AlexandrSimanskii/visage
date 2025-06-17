@@ -1,0 +1,34 @@
+@use "variable" as *;
+@use "common" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h1 span {
+  color: $theme-color;
+}
+ul {
+  list-style-type: none;
+}
+main {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+section {
+  min-height: 100vh;
+}
