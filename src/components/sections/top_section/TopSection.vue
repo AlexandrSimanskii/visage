@@ -22,7 +22,7 @@
               />
             </div>
 
-            <button-app @click="formHandler">заказать</button-app>
+            <button-app tap @click="formHandler">заказать</button-app>
           </form>
         </div>
         <top-stars />
@@ -51,7 +51,7 @@
               современном коворкинге.
             </p>
 
-            <button-app>забронировать</button-app>
+            <button-app tap>забронировать</button-app>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import ButtonApp from "../common/ButtonApp.vue";
+import ButtonApp from "@/components/common/ButtonApp.vue";
 import TopStars from "./TopStars.vue";
 import InputMask from "primevue/inputmask";
 const phone = ref();
@@ -123,7 +123,7 @@ form {
   position: relative;
   padding-top: 400px;
   width: 100%;
-  
+
   &__title {
     display: block;
     text-align: center;

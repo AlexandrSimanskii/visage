@@ -73,12 +73,18 @@
     </svg>
     <div class="inner">
       <slot></slot>
-      <img src="/images/icons/tap.svg" alt="tap" />
+      <img v-if="props.tap" src="/images/icons/tap.svg" alt="tap" />
     </div>
   </button>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  tap?: boolean;
+}>();
+
+
+</script>
 
 <style scoped lang="scss">
 button {
@@ -108,7 +114,7 @@ svg {
 .inner {
   font-weight: 500;
   letter-spacing: 1px;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   color: white;
   display: flex;
   align-items: center;

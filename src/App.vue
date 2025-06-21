@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeaderApp from "./components/HeaderApp.vue";
-import TopSection from "./components/top_section/TopSection.vue";
+import TopSection from "./components/sections/top_section/TopSection.vue";
 import MainScroll from "@/components/MainScroll.vue";
 import MainPaginator from "./components/MainPaginator.vue";
 import VibeCoworcingSection from "./components/sections/VibeCoworcingSection.vue";
@@ -8,7 +8,7 @@ import KnowSelfSection from "./components/sections/KnowSelfSection.vue";
 import LastSection from "@/components/sections/LastSection.vue";
 import MapSection from "@/components/sections/MapSection.vue";
 import SimpleDoSection from "@/components/sections/SimpleDoSection.vue";
-import VibeSection from "@/components/sections/VibeSection.vue";
+import VibeSection from "./components/sections/vibe_section/VibeSection.vue";
 import FooterApp from "./components/FooterApp.vue";
 import { onMounted, useTemplateRef } from "vue";
 
